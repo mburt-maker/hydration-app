@@ -1,0 +1,145 @@
+.history-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8faf9 0%, #f5f9fc 100%);
+}
+
+.history-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.period-tabs {
+  display: flex;
+  background: white;
+  border-radius: 12px;
+  padding: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.period-tab {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.period-tab:hover {
+  color: #333;
+}
+
+.period-tab.active {
+  background: #A8E6CF;
+  color: #333;
+}
+
+.history-loading {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+}
+
+.summary-card {
+  display: flex;
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.summary-stat {
+  flex: 1;
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+
+.stat-label {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-empty {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+  background: white;
+  border-radius: 16px;
+}
+
+.history-day {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.day-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.day-date {
+  font-weight: 600;
+  color: #333;
+}
+
+.day-drinks {
+  font-size: 13px;
+  color: #888;
+}
+
+.day-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #A8E6CF 0%, #88D8B0 100%);
+  border-radius: 4px;
+  transition: width 0.3s ease-out;
+}
+
+.day-total {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  min-width: 50px;
+  text-align: right;
+}
+
+.day-total.met {
+  color: #4CAF50;
+}

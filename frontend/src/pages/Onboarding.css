@@ -1,0 +1,168 @@
+.onboarding-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #e8f5e9 0%, #e3f2fd 100%);
+}
+
+.onboarding-card {
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+.onboarding-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.onboarding-card h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 8px;
+}
+
+.onboarding-subtitle {
+  color: #666;
+  margin: 0 0 32px;
+  font-size: 16px;
+}
+
+.onboarding-field {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.onboarding-field label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.onboarding-input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.onboarding-input:focus {
+  border-color: #A8E6CF;
+}
+
+.goal-selector {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.goal-slider {
+  flex: 1;
+  height: 8px;
+  appearance: none;
+  background: #e0e0e0;
+  border-radius: 4px;
+  outline: none;
+}
+
+.goal-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #A8E6CF;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.goal-display {
+  background: #f5f5f5;
+  padding: 8px 16px;
+  border-radius: 8px;
+  min-width: 80px;
+  text-align: center;
+}
+
+.goal-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.goal-unit {
+  font-size: 14px;
+  color: #666;
+  margin-left: 2px;
+}
+
+.goal-presets {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.goal-preset {
+  padding: 8px 12px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.goal-preset:hover {
+  border-color: #A8E6CF;
+}
+
+.goal-preset.active {
+  background: #A8E6CF;
+  border-color: #A8E6CF;
+  color: #333;
+}
+
+.onboarding-error {
+  color: #e57373;
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+.onboarding-button {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #A8E6CF;
+  color: #333;
+}
+
+.onboarding-button:hover:not(:disabled) {
+  background: #90d4b8;
+  transform: translateY(-1px);
+}
+
+.onboarding-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

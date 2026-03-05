@@ -1,0 +1,67 @@
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8faf9 0%, #f5f9fc 100%);
+}
+
+.dashboard-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 20px 100px;
+}
+
+.dashboard-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  color: #888;
+  font-size: 16px;
+}
+
+.dashboard-error {
+  background: #ffebee;
+  color: #c62828;
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.ring-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 32px;
+}
+
+.add-drink-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: #A8E6CF;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(168, 230, 207, 0.4);
+}
+
+.add-drink-button:hover {
+  background: #90d4b8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(168, 230, 207, 0.5);
+}
+
+.add-drink-button:active {
+  transform: translateY(0);
+}
+
+.add-icon {
+  font-size: 20px;
+  font-weight: 700;
+}

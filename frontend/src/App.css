@@ -1,0 +1,9 @@
+.app-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 16px;
+  color: #888;
+  background: linear-gradient(135deg, #e8f5e9 0%, #e3f2fd 100%);
+}
